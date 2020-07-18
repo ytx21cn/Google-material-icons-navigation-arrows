@@ -3,7 +3,7 @@ icons_dir := icons
 zip := icons.zip
 
 .PHONY: all
-all: download
+all: download $(zip)
 
 .PHONY: download
 download:
@@ -12,10 +12,10 @@ download:
 $(zip): $(icons_dir)
 	zip $@ -r $<
 
-.PHONY: rm_icons
-rm_icons:
+.PHONY: rm_zip
+rm_zip:
 	-rm $(zip)
 
 .PHONY: clean
 clean:
-	-rm -rf icons/
+	-rm -rf $(icons_dir)
