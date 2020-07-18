@@ -1,4 +1,4 @@
-# Material Icons Navitation Arrows
+# Material Icons Navigation Arrows
 **Sources: https://material.io/resources/icons/**
 
 This repository contains the 12 arrows used for wayfinding and navigation:
