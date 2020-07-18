@@ -17,7 +17,7 @@ def download():
         arrow_type = re.search(r'([^/]*)/.*', image_name)[1]
         image_size = re.search(r'\d*px', image_name)[0]
 
-        image_name = '{}_{}.svg'.format(arrow_type, image_size)
+        image_name = 'Google_material_icons_{}_{}.svg'.format(arrow_type, image_size)
         image_name = os.path.join(icons_dir, image_name)
 
         subprocess.run(['wget', '-O', image_name, '-c', link])
